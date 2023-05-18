@@ -10,7 +10,7 @@
 </head>
 <body onload="asignarEventos()">
     <p class="titulo">Pizzeria</p>
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <h2>Elige para beber</h2>
             <p>Disfruta de nuestra clasica selección de tragos</p>
@@ -42,7 +42,7 @@
             </form>
         </div>
     </div><br>
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <h2>Menú</h2>
             <p>Disfruta de la mejor comida Italiana</p>
@@ -66,7 +66,6 @@
                         
                     </div>
                     <div class="col-md-4 text-center">    
-                    
                         <p><img src="assets/img/riso.jpeg"></p><br><br>
                         <p><img src="assets/img/cippollotti.jpeg"></p><br><br>
                         <p><img src="assets/img/caprese.jpg"></p><br>
@@ -77,14 +76,14 @@
             </form>
         </div>
     </div><br>
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <h2>Cuenta</h2>
             <p>Esperamos que disfrute de su comida ¡Ciao!</p>
             <form action="">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="tituloItems">Item</p>
+                        <p class="tituloItems">Bebestibles</p>
                         <hr>               
                         <p id="cuentaItem"></p>
                     </div>
@@ -96,11 +95,32 @@
                 </div> 
                 <div class="row">
                     <div class="col-md-6">
-                    <p class="tituloItems">Total :</p>
+                    <p class="tituloItems"> Total Bebestibles:</p>
+                    </div>
+                    <div class="col-md-6"  id="cuentaPrecio">
+                        <p id="cajaTotalAPagar">$</p>
+                        </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6"id="cuentaPrecio">
+                        <p class="tituloItems">Comida</p>
+                        <hr>               
+                        <p id="cuentaItemComida"></p>
                     </div>
                     <div class="col-md-6">
-                        <p class="totalCompra"></p>
-                        </div>
+                        <p class="tituloItems" id="cuentaItemComida" >Precios</p>
+                        <hr>            
+                        <p id="cuentaPrecioComida"></p>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-6">
+                    <p class="tituloItems">Total Comida:</p>
+                    </div>
+                    <div class="col-md-6" id="cuentaPrecioComida">
+                        <p id="cajaTotalAPagarComida">$</p>
+                    </div>
                 </div>
             </form>
         </div>
